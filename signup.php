@@ -84,7 +84,7 @@
 							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong>Sign Up</strong></button></center>
 						</div>
 						<div class="login-register">
-						<href="register.php"
+						<href="info.php">
 					</form>
 				</div>
 			</div>

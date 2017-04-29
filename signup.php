@@ -27,7 +27,7 @@
 	               	</div>
 	            </div> 
 				<div class="main-login main-center">
-					<form class="form-horizontal" method="post" action="#">
+					<form class="form-horizontal" method="post" action="info.php">
 						
 						<center><div class="form-group">
 							<label for="username" class="cols-sm-2 control-label"><strong>Username:</strong></label>
@@ -85,7 +85,6 @@
 						</div>
 						<div class="login-register">
 						
-						<form action=”info.php” method=”post”>
 					</form>
 				</div>
 			</div>

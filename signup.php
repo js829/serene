@@ -81,10 +81,11 @@
 
 
 						<center><div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong><a href="info.php">Sign Up</strong></button></center>
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong>Sign Up</strong></button></center>
 						</div>
 						<div class="login-register">
-						<href="info.php">
+						
+						<form action=”info.php” method=”post”>
 					</form>
 				</div>
 			</div>

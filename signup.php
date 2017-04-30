@@ -86,7 +86,7 @@
 
 
 						<center><div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><a href="?show_add_form"><strong>Sign Up</strong></button></center>
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong>Sign Up</strong></button></center>
 						</div>
 						<div class="login-register">
 						

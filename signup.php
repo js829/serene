@@ -15,7 +15,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
-		<? include("addUser.php"); ?>
+		<form action="addUser.php" method="post">
+
 		<title>Registration</title>
 	</head>
 	<body>

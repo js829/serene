@@ -15,6 +15,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
+		<? include("addUser.php"); ?>
 		<title>Registration</title>
 	</head>
 	<body>
@@ -28,15 +29,13 @@
 	            </div> 
 				<div class="main-login main-center">
 
-					<form action="addUser.php" method="post">
-
 						
 						<center><div class="form-group">
-							<label for="username" class="cols-sm-2 control-label"><strong>Username:</strong></label>
+							<label for="uname" class="cols-sm-2 control-label"><strong>Username:</strong></label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="email" class="form-control" name="username" id="username"  placeholder="Enter your email address"/></center>
+									<input type="email" class="form-control" name="uname" id="uname"  placeholder="Enter your email address"/></center>
 
 						<center><div class="form-group">
 							<label for="password" class="cols-sm-2 control-label"><strong>Password:</strong></label>
@@ -83,7 +82,7 @@
 
 
 						<center><div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong>Sign Up<a href= addUser.php</strong></button></center>
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong>Sign Up<a href= index.php</strong></button></center>
 						</div>
 						<div class="login-register">
 						

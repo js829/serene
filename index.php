@@ -33,11 +33,11 @@ require_once 'database.php';
 					<form class="form-horizontal" method="post" action="#">
 						
 						<center><div class="form-group">
-							<label for="username" class="cols-sm-2 control-label"><strong>Username:</strong></label>
+							<label for="uname" class="cols-sm-2 control-label"><strong>Username:</strong></label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="email" class="form-control" name="username" id="username"  placeholder="Enter your Username"/></center>
+									<input type="email" class="form-control" name="uname" id="uname"  placeholder="Enter your Username"/></center>
 								<br>
 						<center><div class="form-group">
 							<label for="password" class="cols-sm-2 control-label"><strong>Password:</strong></label>

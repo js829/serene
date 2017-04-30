@@ -2,16 +2,16 @@
 	include_once 'database.php';
 	
 	//Let's make sure the correct data is received. 
-	if (!isset($_REQUEST['username']) || !isset($_REQUEST['password'])){
+	if (!isset($_REQUEST['uname']) || !isset($_REQUEST['password'])){
 		header('HTTP/1.1 500 Internal Server Error');
 		exit("ERROR: There was an error writing to the database. Some required data was missing.<br><a href='index.php'>Go back to main page.</a>");
 	}
-	else if ($_REQUEST['username'] == null || $_REQUEST['password'] == null){
+	else if ($_REQUEST['uname'] == null || $_REQUEST['password'] == null){
 		header('HTTP/1.1 500 Internal Server Error');
 		exit("ERROR: There was an error writing to the database. Some required data was blank.<br><a href='index.php'>Go back to main page.</a>");
 	}
 	
-	$username = $_REQUEST['username'];
+	$uname = $_REQUEST['uname'];
 	$userpass  = $_REQUEST['password'];
 
 	//Let's make sure the e-mail doesn't already exist.
@@ -25,7 +25,7 @@
 	}
 
 	//Let's add the data.
-	$sql = 'INSERT INTO user (`email`, `password`) VALUES ("'.$username.'", "'.$password.'")';
+	$sql = 'INSERT INTO user (`email`, `password`) VALUES ("'.$uname.'", "'.$password.'")';
 	$results = runQuery($sql);
 	
 	echo "User Added.";

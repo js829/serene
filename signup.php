@@ -28,7 +28,7 @@
 	            </div> 
 				<div class="main-login main-center">
 
-					<form action="index.php" method="post" id= "user_info_form">
+					<form action="addUser.php" method="post" id= "user_info_form">
 						<input type="hidden" name="action" value="user_info">
 
 

@@ -71,47 +71,6 @@ require_once 'database.php';
 </head>
 <body>
 
-<?php
-	include_once 'database.php';
-	
-	//Let's make sure the correct data is received. 
-	if (!isset($_REQUEST['username']) || !isset($_REQUEST['password'])){
-		header('HTTP/1.1 500 Internal Server Error');
-		exit("ERROR: There was an error writing to the database. Some required data was missing.<br><a href='index.php'>Go back to main page.</a>");
-	}
-	else if ($_REQUEST['username'] == null || $_REQUEST['password'] == null){
-		header('HTTP/1.1 500 Internal Server Error');
-		exit("ERROR: There was an error writing to the database. Some required data was blank.<br><a href='index.php'>Go back to main page.</a>");
-	}
-	
-	$username = $_REQUEST['username'];
-	$userpass  = $_REQUEST['password'];
-
-	//Let's make sure the e-mail doesn't already exist.
-	$sql = 'SELECT * FROM user where username="'.$username.'"';
-	$results = runQuery($sql);
-	
-	//If the following line has results (the array length is more than 0), that means data/e-mail already exists.
-	if (count($results) > 0){
-		header('HTTP/1.1 500 Internal Server Error');
-		exit("ERROR: The e-mail address already exists.<br><a href='index.php'>Go back to main page.</a>");
-	}
-
-	//Let's add the data.
-	$sql = 'INSERT INTO user (`email`, `password`) VALUES ("'.$username.'", "'.$password.'")';
-	$results = runQuery($sql);
-	
-	echo "User Added.";
-
-?>
-
-	<div>
-		<a href="index.php">Go back to main page.</a>
-	</div>
-
-</body>
-</html>
-
 	
 
 		<script type="text/javascript" src="assets/js/bootstrap.js"></script>

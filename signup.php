@@ -28,10 +28,7 @@
 	            </div> 
 				<div class="main-login main-center">
 
-					<form action="addUser.php" method="post" id= "user_info_form">
-						<input type="hidden" name="action" value="user_info">
-
-
+					<form action="addUser.php" method="post">
 
 						
 						<center><div class="form-group">

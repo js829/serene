@@ -53,11 +53,11 @@ require_once 'database.php';
 <br>
 			
 						<center><div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong><a href="signup.php"><a href= addUser.php>Register Now!</strong></button></center>
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong><a href="signup.php">Register Now!</strong></button></center>
 						</div>
 
 						<div class="login-register">
-						<href="register.php"
+						<href="register.php">
 					</form>
 				</div>
 			</div>

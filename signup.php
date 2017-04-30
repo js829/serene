@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<form action="addUser.php" method="post">
     <head> 
     <link rel="stylesheet" type= "text/css" href="main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +15,6 @@
 		<!-- Google Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-
-		<form action="addUser.php" method="post">
 
 		<title>Registration</title>
 	</head>
@@ -83,7 +82,7 @@
 
 
 						<center><div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong>Sign Up<a href= index.php</strong></button></center>
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong>Sign Up<a href= addUser.php</strong></button></center>
 						</div>
 						<div class="login-register">
 						

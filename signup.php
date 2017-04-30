@@ -82,7 +82,8 @@
 
 
 						<center><div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><formaction="addUser.php"><strong>Sign Up<</strong></button></center>
+							<button type="submit" formaction="addUser.php">Submit </button>
+</form>
 						</div>
 						<div class="login-register">
 						

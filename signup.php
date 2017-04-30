@@ -22,12 +22,17 @@
 			<div class="row main">
 				<div class="panel-heading">
 	               <div class="panel-title text-center">
-	               		<center><h1 class="title">To Do List - Registration</h1></center>
+	               		<center><h1 class="title">To Do List Maker - Registration</h1></center>
 	               		<hr />
 	               	</div>
 	            </div> 
 				<div class="main-login main-center">
-					<form class="form-horizontal" method="post" action="info.php">
+
+					<form action="index.php" method="post" id= "user_info_form">
+						<input type="hidden" name="action" value="user_info">
+
+
+
 						
 						<center><div class="form-group">
 							<label for="username" class="cols-sm-2 control-label"><strong>Username:</strong></label>
@@ -81,7 +86,7 @@
 
 
 						<center><div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><strong><a href="info.php">Sign Up</strong></button></center>
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button"><a href="?show_add_form"><strong>Sign Up</strong></button></center>
 						</div>
 						<div class="login-register">
 						

@@ -12,10 +12,10 @@
 	}
 	
 	$uname = $_REQUEST['uname'];
-	$userpass  = $_REQUEST['password'];
+	$password  = $_REQUEST['password'];
 
 	//Let's make sure the e-mail doesn't already exist.
-	$sql = 'SELECT * FROM user where username="'.$username.'"';
+	$sql = 'SELECT * FROM users where username="'.$username.'"';
 	$results = runQuery($sql);
 	
 	//If the following line has results (the array length is more than 0), that means data/e-mail already exists.
@@ -25,7 +25,7 @@
 	}
 
 	//Let's add the data.
-	$sql = 'INSERT INTO user (`email`, `password`) VALUES ("'.$uname.'", "'.$password.'")';
+	$sql = 'INSERT INTO users (`email`, `password`) VALUES ("'.$uname.'", "'.$password.'")';
 	$results = runQuery($sql);
 	
 	echo "User Added.";

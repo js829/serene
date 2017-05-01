@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <form action="addUser.php" method="post">
+<?php include_once 'database.php';?>
     <head> 
     <link rel="stylesheet" type= "text/css" href="main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">

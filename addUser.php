@@ -12,12 +12,12 @@
 	}
 	
 	$uname = $_REQUEST['uname'];
-	$password  = $_REQUEST['password'];
-	$fname  = $_REQUEST['fname'];
-	$lname  = $_REQUEST['lname'];
-	$birthday  = $_REQUEST['birthday'];
-	$num  = $_REQUEST['num'];
-	$gender  = $_REQUEST['gender'];
+	$password = $_REQUEST['password'];
+	$fname = $_REQUEST['fname'];
+	$lname = $_REQUEST['lname'];
+	$birthday = $_REQUEST['birthday'];
+	$num = $_REQUEST['num'];
+	$gender = $_REQUEST['gender'];
 
 
 	//Let's make sure the e-mail doesn't already exist.
@@ -31,7 +31,7 @@
 	}
 
 	//Let's add the data.
-	$sql = 'INSERT INTO users (`email`, `password`, `fname`,`lname`,`birthday`,`num`,`gender`,) VALUES ("'.$uname.'", "'.$password.', '.$fname.', '.$lname.', '.$birthday.', '.$num.', '.$num.'")';
+	$sql = 'INSERT INTO users (`email`, `password`, `fname`,`lname`,`birthday`,`num`,`gender`,) VALUES ('.$uname.', '.$password.', '.$fname.', '.$lname.', '.$birthday.', '.$num.', '.$num.')';
 	$results = runQuery($sql);
 	
 	echo "User Added.";

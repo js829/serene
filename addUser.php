@@ -31,7 +31,11 @@
 	}
 
 	//Let's add the data.
-	$sql = 'INSERT INTO users (`email`, `password`, `fname`,`lname`,`birthday`,`num`,`gender`,) VALUES ('.$uname.', '.$password.', '.$fname.', '.$lname.', '.$birthday.', '.$num.', '.$num.')';
+	$sql = 'INSERT INTO users
+                  (FName, LName, Email, Password, Phone, Bday, Gender)
+               VALUES
+                  (:fname, :lname, :email, :pass, :pnumber, :bday, :gender);
+
 	$results = runQuery($sql);
 	
 	echo "User Added.";
